@@ -1,5 +1,5 @@
 # myprofile
-A portfolio introducing me created through REACT 
+A portfolio introducing me created through REACT and deployed through s3
 
 ### Future Features/Fixes
 * Pull data directly from github for the cards
