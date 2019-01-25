@@ -1,0 +1,163 @@
+@keyframes example {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+  }
+  @keyframes shake {
+    /* 0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-2deg); }
+    20% { transform: translate(-3px, 0px) rotate(2deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(2deg); }
+    50% { transform: translate(-1px, 2px) rotate(-2deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-2deg); }
+    80% { transform: translate(-1px, -1px) rotate(2deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-2deg); } */
+    
+  }
+  
+  /* The element to apply the animation to */
+.logo:hover {
+  /* width: 100px;
+  height: 100px; */
+  animation-name: example;
+  animation-duration: 0.8s;
+}
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.bottom{
+    animation-name: fadein;
+    animation-duration: 0.8s;  
+}
+
+.cardStyle:hover .overlay {
+  bottom: 0;
+  /* opacity: 0.95; */
+  height: 100%;
+}
+.cardStyle:hover {
+  transform: scale(1.05);
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  /* transform: scale(1.5); */
+  transition: .5s ease;
+  background-color: #9EB3FA;
+
+  /* background-color:  */
+}
+.cardStyle{
+  border-radius: 5px;
+  box-shadow: 0 40px 110px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  backface-visibility: hidden;
+  background-color: black;
+  padding: 10px;
+  position: relative;
+}
+
+/* .topBar:hover{
+  background-color:#D6A5B3;
+  opacity: 1;
+} */
+.topBar {
+  background-color:"#D6A5B3";
+  opacity: 1;
+}
+.main{
+  background-attachment: fixed;
+}
+
+.corner-ribbon.top-right{
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+.corner-ribbon{
+  width: 200px;
+  /* background: #CE6180; */
+  position: relative;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  font-size: 14px;
+}
+
+.blackBlue{
+  color: blue;
+}
+
+.darkPink{
+  color: #CE6180;
+}
+
+.btn-filter{
+  background-color: grey !important;
+}
+.btn-selected{
+  background-color: #A062F7 !important;
+  color: #ffffff !important;
+}
+button{
+  color: #ffffff !important;
+}
+
+.rounded{
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.dPink{
+  background-color: #FD92E2 !important;
+}
+.dBlue{
+  background-color: #7994FA !important;
+}
+.dPurple{
+  background-color: #A062F7 !important;
+}
+.dGreen{
+  background-color: #86D2CE !important;
+}
+.dNavy{
+  background-color: #669CED !important;
+}
+.dGreen2{
+  background-color: #D7F4EF !important;
+}
